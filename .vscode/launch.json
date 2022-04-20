@@ -1,0 +1,16 @@
+{
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjetofinalestagiarioApp<projetofinalestagiario>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.owse.projetofinalestagiario.ProjetofinalestagiarioApp",
+            "projectName": "projetofinalestagiario",
+            "args": "--spring.profiles.active=dev",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
