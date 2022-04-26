@@ -1,7 +1,7 @@
 {
   "home": {
     "title": "Welcome to your Final Internship Project!",
-    "subtitle": "This is your homepage",
+    "subtitle": "Login to get started",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },

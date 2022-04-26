@@ -26,6 +26,14 @@ O comando `npm run` listará todos os scripts disponíveis para execução neste
 
 ## Considerações Gerais
 
+Para entrar, utilize as seguintes contas padrões:
+- Administrador (usuário="admin" and senha="admin")
+- Usuário (usuário="user" e senha="user").
+
+Caso precise, utilize a rota `/register` para criar uma conta.
+
+---
+
 1. This application was generated using JHipster 7.8.1, you can find documentation and help at [https://www.jhipster.tech](https://www.jhipster.tech).
 
 2. Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.

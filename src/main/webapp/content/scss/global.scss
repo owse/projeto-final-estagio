@@ -55,6 +55,14 @@ Browser Upgrade Prompt
 Main page styles
 ========================================================================== */
 
+.logo-owse.img-fluid {
+  display: inline-block;
+  width: 347px;
+  height: 497px;
+  background: url('../images/logo-owse.svg') no-repeat center top;
+  background-size: contain;
+}
+
 .hipster.img-fluid {
   display: inline-block;
   width: 347px;

@@ -2,7 +2,7 @@
   <b-navbar data-cy="navbar" toggleable="md" type="dark" class="jh-navbar">
     <b-navbar-brand class="logo" b-link to="/">
       <span class="logo-img"></span>
-      <span v-text="$t('global.title')" class="navbar-title">projetofinalestagiario</span> <span class="navbar-version">{{ version }}</span>
+      <span v-text="$t('global.title')" class="navbar-title">projetofinalestagiario</span>
     </b-navbar-brand>
     <b-navbar-toggle
       right
