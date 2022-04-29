@@ -1,19 +1,30 @@
 {
   "home": {
-    "title": "Welcome to your Final Internship Project!",
-    "subtitle": "Login to get started",
+    "code-todos": "In the code, you will find some <em>TODO</em>s and you will have to resolve them. \nYou are expected to do this without help from others.",
+    "considerations": "Considerations",
+    "courses-roadmap": "If you have already taken all the courses on our <a href='https://whimsical.com/desenvolvedor-estagiario-Pj42td5imWJ4rL4VVzhBcC' target='_blank'>Roadmap</a>, now it's time to put the skills you've learned into practice.",
+    "create-screens": "Creation of screens;",
+    "crud-apply": "CRUD application (Create, Read, Update, Delete);",
+    "data-flow": "Here we will use the same <a href=\"https://whimsical.com/fluxo-log-ai-TxvqSGyrcnSUJSTHJ7WHxF\">Fluxo de Dados</a> used in the main projects of the company.",
+    "github": "GitHub",
+    "like": "If you like JHipster, don't forget to give us a star on",
+    "link": {
+      "bugtracker": "JHipster bug tracker",
+      "chat": "JHipster public chat room",
+      "follow": "follow @jhipster on Twitter",
+      "homepage": "JHipster homepage",
+      "stackoverflow": "JHipster on Stack Overflow"
+    },
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
+    "maintenance-components": "Consumption and maintenance of @Components;",
+    "maintenance-routes-apis": "Creating Routes and APIs",
+    "maintenance-services": "Creation and consumption of Services;",
+    "prototype": "After logging in, you will see a blank screen. \nYour mission will populate this screen as per the Prototype.",
     "question": "If you have any question on JHipster:",
-    "link": {
-      "homepage": "JHipster homepage",
-      "stackoverflow": "JHipster on Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "JHipster public chat room",
-      "follow": "follow @jhipster on Twitter"
-    },
-    "like": "If you like JHipster, don't forget to give us a star on",
-    "github": "GitHub"
+    "subtitle": "Login to get started",
+    "title": "Welcome to your Final Internship Project!",
+    "what-practice": "By doing this you will have the opportunity to practice most of what we use on a daily basis, such as:"
   }
 }

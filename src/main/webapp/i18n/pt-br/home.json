@@ -1,19 +1,30 @@
 {
   "home": {
-    "title": "Bem-vindo ao seu Projeto Final de Estágio!",
-    "subtitle": "Faça login para começar",
+    "code-todos": "No código, você encontrará alguns <em>TODO</em>s e terá de resolve-los. É esperado que você faça isso sem ajuda de outras pessoas.",
+    "considerations": "Considerações",
+    "courses-roadmap": "Se você já realizou todos os cursos do nosso <a href='https://whimsical.com/desenvolvedor-estagiario-Pj42td5imWJ4rL4VVzhBcC' target='_blank'>Roadmap</a>, agora é hora de colocar em prática as habilidades que você aprendeu.",
+    "create-screens": "Criação de telas;",
+    "crud-apply": "Aplicação de CRUD (Create, Read, Update, Delete);",
+    "data-flow": "Aqui utilizaremos o mesmo <a href=\"https://whimsical.com/fluxo-log-ai-TxvqSGyrcnSUJSTHJ7WHxF\">Fluxo de Dados</a> utilizado nos principais projetos da empresa.",
+    "github": "GitHub",
+    "like": "Se você gosta do JHipster, não se esqueça de avaliar no",
+    "link": {
+      "bugtracker": "JHipster bug tracker",
+      "chat": "Sala de bate-papo pública JHipster",
+      "follow": "siga @jhipster no Twitter",
+      "homepage": "Página principal JHipster",
+      "stackoverflow": "JHipster no Stack Overflow"
+    },
     "logged": {
       "message": "Você está logado como \"{{username}}\"."
     },
+    "maintenance-components": "Consumo e manutenção de @Components;",
+    "maintenance-routes-apis": "Criação de Rotas e APIs",
+    "maintenance-services": "Criação e consumo de Services;",
+    "prototype": "Após fazer login, você verá uma tela em branco. A sua missão será popular esta tela conforme o Protótipo.",
     "question": "Em caso de dúvida sobre o JHipster:",
-    "link": {
-      "homepage": "Página principal JHipster",
-      "stackoverflow": "JHipster no Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "Sala de bate-papo pública JHipster",
-      "follow": "siga @jhipster no Twitter"
-    },
-    "like": "Se você gosta do JHipster, não se esqueça de avaliar no",
-    "github": "GitHub"
+    "subtitle": "Faça login para começar",
+    "title": "Bem-vindo ao seu Projeto Final de Estágio!",
+    "what-practice": "Ao fazer isso você terá a oportunidade de praticar grande parte daquilo que utilizamos no dia-a-dia, como:"
   }
 }
