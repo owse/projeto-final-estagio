@@ -1,92 +1,4 @@
 {
-  "global": {
-    "title": "Final Internship Project",
-    "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
-    "menu": {
-      "home": "Home",
-      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
-      "entities": {
-        "main": "Entities",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
-      },
-      "account": {
-        "main": "Account",
-        "settings": "Settings",
-        "password": "Password",
-        "sessions": "Sessions",
-        "login": "Sign in",
-        "logout": "Sign out",
-        "register": "Register"
-      },
-      "admin": {
-        "main": "Administration",
-        "userManagement": "User management",
-        "tracker": "User tracker",
-        "metrics": "Metrics",
-        "health": "Health",
-        "configuration": "Configuration",
-        "logs": "Logs",
-        "apidocs": "API",
-        "database": "Database",
-        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
-      },
-      "language": "Language"
-    },
-    "form": {
-      "username.label": "Username",
-      "username.placeholder": "Your username",
-      "currentpassword.label": "Current password",
-      "currentpassword.placeholder": "Current password",
-      "newpassword.label": "New password",
-      "newpassword.placeholder": "New password",
-      "confirmpassword.label": "New password confirmation",
-      "confirmpassword.placeholder": "Confirm the new password",
-      "email.label": "Email",
-      "email.placeholder": "Your email"
-    },
-    "messages": {
-      "info": {
-        "authenticated": {
-          "prefix": "If you want to ",
-          "link": "sign in",
-          "suffix": ", you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\")."
-        },
-        "register": {
-          "noaccount": "You don't have an account yet?",
-          "link": "Register a new account"
-        }
-      },
-      "error": {
-        "dontmatch": "The password and its confirmation do not match!"
-      },
-      "validate": {
-        "newpassword": {
-          "required": "Your password is required.",
-          "minlength": "Your password is required to be at least 4 characters.",
-          "maxlength": "Your password cannot be longer than 50 characters.",
-          "strength": "Password strength:"
-        },
-        "confirmpassword": {
-          "required": "Your confirmation password is required.",
-          "minlength": "Your confirmation password is required to be at least 4 characters.",
-          "maxlength": "Your confirmation password cannot be longer than 50 characters."
-        },
-        "email": {
-          "required": "Your email is required.",
-          "invalid": "Your email is invalid.",
-          "minlength": "Your email is required to be at least 5 characters.",
-          "maxlength": "Your email cannot be longer than 50 characters."
-        }
-      }
-    },
-    "field": {
-      "id": "ID"
-    },
-    "ribbon": {
-      "dev": "Development"
-    },
-    "item-count": "Showing {{first}} - {{second}} of {{total}} items."
-  },
   "entity": {
     "action": {
       "addblob": "Add blob",
@@ -99,43 +11,134 @@
       "save": "Save",
       "view": "View"
     },
+    "delete": {
+      "title": "Confirm delete operation"
+    },
     "detail": {
       "field": "Field",
       "value": "Value"
     },
-    "delete": {
-      "title": "Confirm delete operation"
-    },
     "validation": {
-      "required": "This field is required.",
-      "minlength": "This field is required to be at least {{ min }} characters.",
+      "datetimelocal": "This field should be a date and time.",
+      "max": "This field cannot be more than {{ max }}.",
+      "maxbytes": "This field cannot be more than {{ max }} bytes.",
       "maxlength": "This field cannot be longer than {{ max }} characters.",
       "min": "This field should be at least {{ min }}.",
-      "max": "This field cannot be more than {{ max }}.",
       "minbytes": "This field should be at least {{ min }} bytes.",
-      "maxbytes": "This field cannot be more than {{ max }} bytes.",
-      "pattern": "This field should follow pattern for {{ pattern }}.",
+      "minlength": "This field is required to be at least {{ min }} characters.",
       "number": "This field should be a number.",
-      "datetimelocal": "This field should be a date and time.",
-      "patternLogin": "This field can only contain letters, digits and e-mail addresses."
+      "pattern": "This field should follow pattern for {{ pattern }}.",
+      "patternLogin": "This field can only contain letters, digits and e-mail addresses.",
+      "required": "This field is required."
     }
   },
   "error": {
-    "internalServerError": "Internal server error",
-    "server.not.reachable": "Server not reachable",
-    "url.not.found": "Not found",
-    "NotNull": "Field {{ fieldName }} cannot be empty!",
-    "Size": "Field {{ fieldName }} does not meet min/max size requirements!",
-    "userexists": "Login name already used!",
     "emailexists": "Email is already in use!",
-    "idexists": "A new {{ entityName }} cannot already have an ID",
-    "idnull": "Invalid ID",
-    "idinvalid": "Invalid ID",
-    "idnotfound": "ID cannot be found",
     "file": {
       "could.not.extract": "Could not extract file",
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
-    }
+    },
+    "idexists": "A new {{ entityName }} cannot already have an ID",
+    "idinvalid": "Invalid ID",
+    "idnotfound": "ID cannot be found",
+    "idnull": "Invalid ID",
+    "internalServerError": "Internal server error",
+    "NotNull": "Field {{ fieldName }} cannot be empty!",
+    "server.not.reachable": "Server not reachable",
+    "Size": "Field {{ fieldName }} does not meet min/max size requirements!",
+    "url.not.found": "Not found",
+    "userexists": "Login name already used!"
   },
-  "footer": "This is your footer"
+  "footer": "This is your footer",
+  "global": {
+    "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
+    "field": {
+      "id": "ID"
+    },
+    "form": {
+      "confirmpassword.label": "New password confirmation",
+      "confirmpassword.placeholder": "Confirm the new password",
+      "currentpassword.label": "Current password",
+      "currentpassword.placeholder": "Current password",
+      "email.label": "Email",
+      "email.placeholder": "Your email",
+      "newpassword.label": "New password",
+      "newpassword.placeholder": "New password",
+      "username.label": "Username",
+      "username.placeholder": "Your username"
+    },
+    "item-count": "Showing {{first}} - {{second}} of {{total}} items.",
+    "menu": {
+      "account": {
+        "login": "Sign in",
+        "logout": "Sign out",
+        "main": "Account",
+        "password": "Password",
+        "register": "Register",
+        "sessions": "Sessions",
+        "settings": "Settings"
+      },
+      "admin": {
+        "apidocs": "API",
+        "configuration": "Configuration",
+        "database": "Database",
+        "health": "Health",
+        "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)",
+        "logs": "Logs",
+        "main": "Administration",
+        "metrics": "Metrics",
+        "tracker": "User tracker",
+        "userManagement": "User management"
+      },
+      "entities": {
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "main": "Entities"
+      },
+      "home": "Home",
+      "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
+      "language": "Language",
+      "tarefas": {
+        "main": "Tasks"
+      }
+    },
+    "messages": {
+      "error": {
+        "dontmatch": "The password and its confirmation do not match!"
+      },
+      "info": {
+        "authenticated": {
+          "link": "sign in",
+          "prefix": "If you want to ",
+          "suffix": ", you can try the default accounts:<br/>- Administrator (login=\"admin\" and password=\"admin\") <br/>- User (login=\"user\" and password=\"user\")."
+        },
+        "register": {
+          "link": "Register a new account",
+          "noaccount": "You don't have an account yet?"
+        }
+      },
+      "validate": {
+        "confirmpassword": {
+          "maxlength": "Your confirmation password cannot be longer than 50 characters.",
+          "minlength": "Your confirmation password is required to be at least 4 characters.",
+          "required": "Your confirmation password is required."
+        },
+        "email": {
+          "invalid": "Your email is invalid.",
+          "maxlength": "Your email cannot be longer than 50 characters.",
+          "minlength": "Your email is required to be at least 5 characters.",
+          "required": "Your email is required."
+        },
+        "newpassword": {
+          "maxlength": "Your password cannot be longer than 50 characters.",
+          "minlength": "Your password is required to be at least 4 characters.",
+          "required": "Your password is required.",
+          "strength": "Password strength:"
+        }
+      }
+    },
+    "ribbon": {
+      "dev": "Development"
+    },
+    "title": "Final Internship Project"
+  }
 }

@@ -24,6 +24,13 @@
             <span v-text="$t('global.menu.home')">Home</span>
           </span>
         </b-nav-item>
+        <b-nav-item-dropdown right id="tarefas-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="tarefas">
+          <span slot="button-content" class="navbar-dropdown-menu">
+            <font-awesome-icon icon="list-check" />
+            <span class="no-bold" v-text="$t('global.menu.tarefas.main')">Tarefas</span>
+          </span>
+          <!-- <entities-menu></entities-menu> -->
+        </b-nav-item-dropdown>
         <b-nav-item-dropdown right id="entity-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="entity">
           <span slot="button-content" class="navbar-dropdown-menu">
             <font-awesome-icon icon="th-list" />
@@ -79,12 +86,7 @@
             <font-awesome-icon icon="flag" />
             <span class="no-bold" v-text="$t('global.menu.language')">Language</span>
           </span>
-          <b-dropdown-item
-            v-for="(value, key) in languages"
-            :key="`lang-${key}`"
-            v-on:click="changeLanguage(key)"
-            :class="{ active: isActiveLanguage(key) }"
-          >
+          <b-dropdown-item v-for="(value, key) in languages" :key="`lang-${key}`" v-on:click="changeLanguage(key)" :class="{ active: isActiveLanguage(key) }">
             {{ value.name }}
           </b-dropdown-item>
         </b-nav-item-dropdown>
@@ -117,14 +119,7 @@
             <font-awesome-icon icon="sign-in-alt" />
             <span v-text="$t('global.menu.account.login')">Sign in</span>
           </b-dropdown-item>
-          <b-dropdown-item
-            data-cy="register"
-            to="/register"
-            tag="b-dropdown-item"
-            id="register"
-            v-if="!authenticated"
-            active-class="active"
-          >
+          <b-dropdown-item data-cy="register" to="/register" tag="b-dropdown-item" id="register" v-if="!authenticated" active-class="active">
             <font-awesome-icon icon="user-plus" />
             <span v-text="$t('global.menu.account.register')">Register</span>
           </b-dropdown-item>
