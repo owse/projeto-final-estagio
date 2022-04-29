@@ -4,5 +4,5 @@
   "i18n-ally.localesPaths": ["src/main/webapp/i18n"],
   "i18n-ally.namespace": false,
   "i18n-ally.pathMatcher": "{locale}/{namespace}.json",
-  "i18n-ally.sourceLanguage": "en"
+  "i18n-ally.sourceLanguage": "pt-br"
 }
