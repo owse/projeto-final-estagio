@@ -124,7 +124,7 @@ public class AccountResource {
                     .hasElement()
                     .flatMap(emailExists -> {
                         if (emailExists) {
-                            throw new EmailAlreadyUsedException();
+                          return Mono.error(new EmailAlreadyUsedException());
                         }
                         return userRepository.findOneByLogin(userLogin);
                     })
@@ -156,7 +156,7 @@ public class AccountResource {
     }
 
     /**
-     * {@code POST   /account/reset-password/init} : Send an email to reset the password of the user.
+     * {@code POST   /account/reset-password/init} : Email to reset the password of the user.
      *
      * @param mail the mail of the user.
      */
