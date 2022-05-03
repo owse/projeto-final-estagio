@@ -7,17 +7,21 @@
       <h1 class="display-4">{{ $t('home.title') }}</h1>
 
       <div>
-        <div v-if="authenticated" class="alert alert-success">
-          <span v-if="username">{{ $t('home.logged.message', { username: username }) }}</span>
-        </div>
-
-        <div v-if="!authenticated" class="alert alert-warning">
-          <span>{{ $t('global.messages.info.authenticated.prefix') }}</span>
-          <a class="alert-link" @click="openLogin()">{{ $t('global.messages.info.authenticated.link') }}</a>
-          <span v-html="$t('global.messages.info.authenticated.suffix')"></span>
+        <div v-if="authenticated">
+          <div class="alert alert-warning">
+            <span v-if="username">{{ $t('home.logged.message', { username: username }) }}</span>
+          </div>
+          <hr />
+          <p>{{ $t('home.project-tasks') }}</p>
         </div>
 
         <div v-if="!authenticated">
+          <div class="alert alert-warning">
+            <span>{{ $t('global.messages.info.authenticated.prefix') }}</span>
+            <a class="alert-link" @click="openLogin()">{{ $t('global.messages.info.authenticated.link') }}</a>
+            <span v-html="$t('global.messages.info.authenticated.suffix')"></span>
+          </div>
+          <hr />
           <h2>{{ $t('home.considerations') }}:</h2>
           <p v-html="$t('home.courses-roadmap')"></p>
           <p v-html="$t('home.data-flow')"></p>

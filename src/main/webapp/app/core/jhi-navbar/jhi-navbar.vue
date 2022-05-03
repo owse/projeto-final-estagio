@@ -29,7 +29,10 @@
             <font-awesome-icon icon="list-check" />
             <span class="no-bold" v-text="$t('global.menu.tarefas.main')">Tarefas</span>
           </span>
-          <!-- <entities-menu></entities-menu> -->
+          <b-dropdown-item to="/tarefas/crud" active-class="active">
+            <font-awesome-icon icon="users" />
+            <span v-text="$t('global.menu.tarefas.simple-crud')">Simple CRUD</span>
+          </b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item-dropdown right id="entity-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="entity">
           <span slot="button-content" class="navbar-dropdown-menu">

@@ -98,7 +98,8 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "language": "Idioma",
       "tarefas": {
-        "main": "Tarefas"
+        "main": "Tarefas",
+        "simple-crud": "CRUD Simples"
       }
     },
     "messages": {
