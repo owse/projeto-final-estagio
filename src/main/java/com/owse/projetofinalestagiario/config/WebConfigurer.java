@@ -63,13 +63,13 @@ public class WebConfigurer implements WebFluxConfigurer {
         return new CorsWebFilter(source);
     }
 
-    // TODO: remove when this is supported in spring-boot
+    // Remove when this is supported in spring-boot
     @Bean
     HandlerMethodArgumentResolver reactivePageableHandlerMethodArgumentResolver() {
         return new ReactivePageableHandlerMethodArgumentResolver();
     }
 
-    // TODO: remove when this is supported in spring-boot
+    // Remove when this is supported in spring-boot
     @Bean
     HandlerMethodArgumentResolver reactiveSortHandlerMethodArgumentResolver() {
         return new ReactiveSortHandlerMethodArgumentResolver();
