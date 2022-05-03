@@ -1,7 +1,5 @@
 package com.owse.projetofinalestagiario.web.rest;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.owse.projetofinalestagiario.IntegrationTest;
 import com.owse.projetofinalestagiario.config.Constants;
 import com.owse.projetofinalestagiario.domain.Authority;
@@ -11,12 +9,8 @@ import com.owse.projetofinalestagiario.repository.EntityManager;
 import com.owse.projetofinalestagiario.repository.UserRepository;
 import com.owse.projetofinalestagiario.security.AuthoritiesConstants;
 import com.owse.projetofinalestagiario.service.dto.AdminUserDTO;
-import com.owse.projetofinalestagiario.service.dto.UserDTO;
 import com.owse.projetofinalestagiario.service.mapper.UserMapper;
 import com.owse.projetofinalestagiario.web.rest.vm.ManagedUserVM;
-import java.time.Instant;
-import java.util.*;
-import java.util.function.Consumer;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,6 +19,15 @@ import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWeb
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.reactive.server.WebTestClient;
+
+import java.time.Instant;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.function.Consumer;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Integration tests for the {@link UserResource} REST controller.

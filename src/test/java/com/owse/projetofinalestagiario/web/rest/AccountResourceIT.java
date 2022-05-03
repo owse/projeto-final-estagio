@@ -1,8 +1,5 @@
 package com.owse.projetofinalestagiario.web.rest;
 
-import static com.owse.projetofinalestagiario.web.rest.AccountResourceIT.TEST_USER_LOGIN;
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.owse.projetofinalestagiario.IntegrationTest;
 import com.owse.projetofinalestagiario.config.Constants;
 import com.owse.projetofinalestagiario.domain.User;
@@ -12,11 +9,8 @@ import com.owse.projetofinalestagiario.security.AuthoritiesConstants;
 import com.owse.projetofinalestagiario.service.UserService;
 import com.owse.projetofinalestagiario.service.dto.AdminUserDTO;
 import com.owse.projetofinalestagiario.service.dto.PasswordChangeDTO;
-import com.owse.projetofinalestagiario.service.dto.UserDTO;
 import com.owse.projetofinalestagiario.web.rest.vm.KeyAndPasswordVM;
 import com.owse.projetofinalestagiario.web.rest.vm.ManagedUserVM;
-import java.time.Instant;
-import java.util.*;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +20,15 @@ import org.springframework.http.MediaType;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.reactive.server.WebTestClient;
+
+import java.time.Instant;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
+
+import static com.owse.projetofinalestagiario.web.rest.AccountResourceIT.TEST_USER_LOGIN;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Integration tests for the {@link AccountResource} REST controller.

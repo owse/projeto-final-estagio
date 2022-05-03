@@ -1,14 +1,9 @@
 package com.owse.projetofinalestagiario.config;
 
-import java.util.concurrent.Executor;
-import java.util.function.Supplier;
-import javax.sql.DataSource;
 import liquibase.integration.spring.SpringLiquibase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.liquibase.LiquibaseDataSource;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -18,6 +13,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.env.Profiles;
 import tech.jhipster.config.JHipsterConstants;
 import tech.jhipster.config.liquibase.AsyncSpringLiquibase;
+
+import javax.sql.DataSource;
+import java.util.concurrent.Executor;
+import java.util.function.Supplier;
 
 @Configuration
 public class LiquibaseConfiguration {

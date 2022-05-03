@@ -12,7 +12,6 @@ import org.springframework.security.authentication.ReactiveAuthenticationManager
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Schedulers;
 
 /**
  * Controller to authenticate users.

@@ -1,9 +1,6 @@
 package com.owse.projetofinalestagiario.web.rest;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.owse.projetofinalestagiario.IntegrationTest;
-import com.owse.projetofinalestagiario.config.Constants;
 import com.owse.projetofinalestagiario.domain.User;
 import com.owse.projetofinalestagiario.repository.EntityManager;
 import com.owse.projetofinalestagiario.repository.UserRepository;
@@ -16,6 +13,8 @@ import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWeb
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.reactive.server.WebTestClient;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Integration tests for the {@link UserResource} REST controller.

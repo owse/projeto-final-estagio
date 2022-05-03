@@ -2,24 +2,25 @@ package com.owse.projetofinalestagiario.web.rest;
 
 import com.owse.projetofinalestagiario.service.UserService;
 import com.owse.projetofinalestagiario.service.dto.UserDTO;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.server.reactive.ServerHttpRequest;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import tech.jhipster.web.util.PaginationUtil;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
@@ -38,7 +39,7 @@ public class PublicUserResource {
     }
 
     /**
-     * {@code GET /users} : get all users with only the public informations - calling this are allowed for anyone.
+     * {@code GET /users} : get all users with only the public information - calling this are allowed for anyone.
      *
      * @param request a {@link ServerHttpRequest} request.
      * @param pageable the pagination information.

@@ -1,24 +1,23 @@
 package com.owse.projetofinalestagiario.service;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.owse.projetofinalestagiario.IntegrationTest;
 import com.owse.projetofinalestagiario.config.Constants;
 import com.owse.projetofinalestagiario.domain.User;
 import com.owse.projetofinalestagiario.repository.UserRepository;
-import com.owse.projetofinalestagiario.service.dto.AdminUserDTO;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import tech.jhipster.security.RandomUtil;
+
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import tech.jhipster.security.RandomUtil;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Integration tests for {@link UserService}.
