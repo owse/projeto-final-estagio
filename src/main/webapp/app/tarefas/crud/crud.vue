@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Aqui faremos um simples CRUD</h1>
+    <h1>{{ $t('global.menu.tarefas.simple-crud') }}</h1>
   </div>
 </template>
 

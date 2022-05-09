@@ -4,7 +4,7 @@
     "http": {
       "400": "Requisição inválida.",
       "403": "Você não tem autorização para acessar esta página.",
-      "404": "A página não existe.",
+      "404": "A página não existe. Talvez você precise criar esta rota.",
       "405": "O verbo HTTP utilizado não é suportado para essa URL.",
       "500": "Erro interno do servidor."
     },
