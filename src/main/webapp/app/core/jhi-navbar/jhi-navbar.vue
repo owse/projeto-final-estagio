@@ -29,23 +29,31 @@
             <font-awesome-icon icon="list-check" />
             <span class="no-bold" v-text="$t('global.menu.tarefas.main')">Tarefas</span>
           </span>
+          <b-dropdown-item to="/bad-route" active-class="active">
+            <b-icon icon="bug" />
+            <span v-text="$t('global.menu.tarefas.routeBug')">Bug da Rota</span>
+          </b-dropdown-item>
           <b-dropdown-item to="/tarefas/crud" active-class="active">
-            <font-awesome-icon icon="database" />
+            <b-icon icon="server" />
             <span v-text="$t('global.menu.tarefas.simple-crud')">Simple CRUD</span>
           </b-dropdown-item>
           <b-dropdown-item to="/tarefas/sidebar" active-class="active">
-            <font-awesome-icon icon="sidebar" />
-            <span v-text="'Sidebar'">Sidebar</span>
+            <b-icon icon="layout-sidebar-reverse" />
+            <span v-text="$t('global.menu.tarefas.sidebar')">Sidebar</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/tarefas/liquibase-changelog" active-class="active">
+            <b-icon icon="file-code" />
+            <span v-text="$t('global.menu.tarefas.liquibaseChangelog')">Liquibase Changelog</span>
           </b-dropdown-item>
         </b-nav-item-dropdown>
-<!--        <b-nav-item-dropdown right id="entity-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="entity">-->
-<!--          <span slot="button-content" class="navbar-dropdown-menu">-->
-<!--            <font-awesome-icon icon="th-list" />-->
-<!--            <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>-->
-<!--          </span>-->
-<!--          <entities-menu></entities-menu>-->
-          <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
-<!--        </b-nav-item-dropdown>-->
+        <!--        <b-nav-item-dropdown right id="entity-menu" v-if="authenticated" active-class="active" class="pointer" data-cy="entity">-->
+        <!--          <span slot="button-content" class="navbar-dropdown-menu">-->
+        <!--            <font-awesome-icon icon="th-list" />-->
+        <!--            <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>-->
+        <!--          </span>-->
+        <!--          <entities-menu></entities-menu>-->
+        <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
+        <!--        </b-nav-item-dropdown>-->
         <b-nav-item-dropdown
           right
           id="admin-menu"

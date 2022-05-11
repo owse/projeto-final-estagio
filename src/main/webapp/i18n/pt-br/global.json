@@ -99,7 +99,10 @@
       "language": "Idioma",
       "tarefas": {
         "main": "Tarefas",
-        "simple-crud": "CRUD Simples"
+        "sidebar": "Sidebar",
+        "simple-crud": "CRUD Simples",
+        "liquibaseChangelog": "Liquibase Changelog",
+        "routeBug": "Bug da Rota"
       }
     },
     "messages": {

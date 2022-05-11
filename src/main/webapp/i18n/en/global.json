@@ -98,7 +98,11 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "language": "Language",
       "tarefas": {
-        "main": "Tasks"
+        "main": "Tasks",
+        "sidebar": "sidebar",
+        "simple-crud": "Simple CRUD",
+        "liquibaseChangelog": "Liquibase Changelog",
+        "routeBug": "Route Bug"
       }
     },
     "messages": {

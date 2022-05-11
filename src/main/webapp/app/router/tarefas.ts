@@ -1,7 +1,8 @@
 import { Authority } from '@/shared/security/authority';
 
 const Crud = () => import('@/tarefas/crud/crud.vue');
-// const Strategy = () => import('@/tarefas/strategy/strategy.vue');
+const BadRoute = () => import('@/badroute/badRoute.vue');
+const Sidebar = () => import('@/tarefas/sidebar/sidebar.vue');
 
 export default [
   {
@@ -10,10 +11,16 @@ export default [
     component: Crud,
     meta: { authorities: [Authority.USER] },
   },
-  // {
-  //   path: '/tarefas/strategy',
-  //   name: 'Strategy',
-  //   component: Strategy,
-  //   meta: { authorities: [Authority.USER] },
-  // },
+  {
+    path: '/bad-route',
+    name: 'BadRoute',
+    component: BadRoute,
+    meta: { authorities: [Authority.USER] },
+  },
+  {
+    path: '/tarefas/sidebar',
+    name: 'Sidebar',
+    component: Sidebar,
+    meta: { authorities: [Authority.USER] },
+  },
 ];
